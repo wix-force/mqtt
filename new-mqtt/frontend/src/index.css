@@ -1,0 +1,5 @@
+body { font-family: Inter, system-ui, Arial; margin: 0; padding: 16px; background: #f7fafc; }
+.container { max-width: 900px; margin: 0 auto; }
+.header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 12px; }
+.card { background:#fff; padding:16px; border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+small { color:#64748b; }

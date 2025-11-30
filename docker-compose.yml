@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mongodb:
+    image: mongo:6
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"    # websockets if enabled in mosquitto conf
+    volumes:
+      - ./mosquitto/config:/mosquitto/config:ro
+
+volumes:
+  mongo_data:

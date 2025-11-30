@@ -1,0 +1,15 @@
+{
+  "name": "mqtt-mongo-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "pub": "node src/publisher.js",
+    "sub": "node src/subscriber.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mqtt": "^4.3.7",
+    "mongoose": "^7.0.0"
+  }
+}
